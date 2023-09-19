@@ -6,6 +6,16 @@
   <router-view/>
 </template>
 
+<script>
+import { io } from 'socket.io-client'
+const socket = io('http://localhost:3001')
+console.log(socket)
+
+export default {
+  name: 'App'
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
